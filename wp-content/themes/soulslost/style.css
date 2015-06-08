@@ -1,0 +1,272 @@
+/*
+ Theme Name:   Souls Lost
+ Theme URI:    http://example.com/twenty-fifteen-child/
+ Description:  A Detective Books Blog
+ Author:       flowerszhong
+ Author URI:   http://www.av-all.com
+ Template:     twentyfourteen
+ Version:      1.0.0
+ License:      GNU General Public License v2 or later
+ License URI:  http://www.gnu.org/licenses/gpl-2.0.html
+ Tags:         light, dark, two-columns, right-sidebar, responsive-layout, accessibility-ready
+ Text Domain:  twenty-fourteen-child
+*/
+
+.site-content .book{
+    position: relative;
+    width: 160px;
+    height: 200px;
+    float: left;
+    margin-right: 0px;
+    margin-left: 40px;
+}
+
+.site-content .book .img{
+    width: 100%;
+    height: 200px;
+    position: relative;
+    background: url(images/post_bg.jpg) 0 0 no-repeat;
+}
+
+.site-content .book .img img{
+    width: 100%;
+    height: 100%;
+}
+
+
+.site-content .book .post_icon {
+    position: absolute;
+
+    background-image:url(images/pt_standard.png);
+    background-repeat: no-repeat;
+    background-position: center 5px;
+    overflow: hidden;
+    display: none;
+}
+
+.site-content .book .post_content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 140px;
+    height: 180px;
+    padding: 10px;
+    font-family: 'Source Sans Pro', sans-serif;
+    text-shadow: 0px 1px 2px rgba(0, 0, 0, 0.5);
+    color: #fff;
+    overflow: hidden;
+    display: none;
+    font-size: 11px;
+    background: #000;
+    opacity: 0.7;
+}
+
+.site-content .post:hover .post_content{
+    display: block;
+}
+
+
+
+.post-navigation, .image-navigation,
+.comments-area,
+
+.site-content .entry-header, 
+.site-content .entry-content, 
+.site-content .entry-summary, 
+.site-content .entry-meta, 
+.page-content,
+
+.archive-header, .page-header{
+    max-width: 100%;
+}
+
+
+.archive-header, .page-header{
+    margin:10px;
+    padding: 0;
+}
+
+.content-area{
+    padding-top: 0;
+}
+
+.home .site-content{
+    padding-top: 20px;
+}
+
+.full-width .site-content .hentry.has-post-thumbnail:first-child {
+        margin-top: 0;
+}
+
+.post-content{
+    cursor: pointer;
+}
+
+.post-title{
+    font-size: 16px;
+    line-height: 20px;
+    color: #fff;
+}
+
+.list-view .site-content .hentry{
+    border-top: 0 none;
+    padding-top: 0;
+}
+.full-width .site-content .has-post-thumbnail .entry-header, 
+.full-width .site-content .hentry.has-post-thumbnail:first-child {
+    margin-top: 0;
+}
+
+.paging-navigation{
+    clear: both;
+}
+
+.copyright{
+    float: right;
+}
+
+.copyright a{
+    color:#24890d;
+    text-decoration: underline;
+}
+
+
+.comments-area{
+    padding:0 10px 10px 10px;
+}
+
+
+
+.site-content .award{
+    position: relative;
+    width: 230px;
+    height: 160px;
+    float: left;
+    margin-right: 0px;
+    margin-left: 20px;
+    text-align: center;
+    border:1px solid red;
+}
+
+.site-content .award img{
+    height: 160px;
+    width:100%;
+}
+
+
+.award .award-title{
+    font-size: 16px;
+    line-height: 24px;
+    color: #000;
+    font-weight: bold;
+    display: none;
+
+}
+
+
+
+.post-nav-widget{
+    position: absolute;
+    background: #24890d;
+    width:224px;
+    padding: 10px;
+    right:-250px;
+    top:5px;
+    color: #fff;
+}
+
+.post-nav-widget a{
+    display: block;
+    text-decoration: none;
+    color: #fff;
+}
+
+.post-nav-widget .link-nav-h3{
+    line-height: 30px;
+    height: 30px;
+}
+
+.post-nav-widget .link-nav-h4{
+    text-indent: 1em;
+    font-size: 11px;
+}
+
+
+.post-nav-widget:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-width: 0 16px 16px 0;
+    border-style: solid;
+    /*border-color: #fff #fff #658E15 #658E15;*/
+    border-color: #fff #fff #97C02F #97C02F;
+    background: #658E15;
+    display: block;
+    width: 0;
+    /* Optional: shadow; */
+    /*-webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+    box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);*/
+}
+
+
+.taxonomy-description h1,
+.taxonomy-description h2,
+.taxonomy-description h3,
+.taxonomy-description h4,
+.taxonomy-description h5,
+.taxonomy-description h6{
+    margin: 3px 0 5px 0;
+}
+
+
+@media (max-width: 490px) {
+    .site-content .award{
+        position: relative;
+        width: 90%;
+        height: auto;
+        float: left;
+        margin-right: 0px;
+        margin-left: 20px;
+        text-align: center;
+        border:1px solid red;
+    }
+
+    .site-content .award img{
+        height: 100%;
+        width:100%;
+    }
+    .post-nav-widget{
+        position: relative;
+        min-width: 80px;
+        background: #24890d;
+        padding: 10px;
+        color: #fff;
+    }
+
+    
+
+}
+
+
+blockquote{
+	border-left: 4px solid rgba(51, 51, 51, 0.7);
+	line-height: 1.8182;
+	margin-bottom: 1.8182em;
+	margin-left: -1.0909em;
+	padding-left: 0.9091em;
+	font-size:14px;
+}
+
+blockquote p{
+	margin-bottom:5px;
+}
+
+
+
+
+
+
+
+

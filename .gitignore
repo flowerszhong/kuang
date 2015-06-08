@@ -8,3 +8,4 @@ wp-config.php
 /upgrade
 /wp-admin
 /wp-includes
+/plugins

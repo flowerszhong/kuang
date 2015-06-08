@@ -3,3 +3,8 @@ wp-config.php
 *.sql
 /uploads
 /cache
+/twentyfourteen
+/languages
+/upgrade
+/wp-admin
+/wp-includes

@@ -1,0 +1,4 @@
+config.php
+wp-config.php
+*.sql
+/uploads
